@@ -1,0 +1,9 @@
+VIM="nvim"
+
+export DENO_INSTALL=$HOME/.deno
+export DOTFILES=$HOME/.dotfiles
+
+addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.local/bin
+addToPathFront $HOME/.deno/bin
+

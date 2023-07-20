@@ -1,0 +1,33 @@
+! X Term Resources
+!
+! xrdb < .Xresources to apply changes
+!
+
+! Scale
+Xft.dpi: 144
+
+! Transparency
+URxvt.transparent: true
+URxvt.shading: 20
+
+Xterm.termName: xterm-256color
+
+! Default font
+xterm*faceName: DejaVuSansM Nerd Font Mono
+xterm*faceSize: 11
+
+! Adding a scroll-bar on the right side
+xterm*scrollBar: false
+xterm*rightScrollBar:true
+
+! Size and Title
+XTerm*vt100.geometry: 80x24 
+XTerm*title: Terminal
+
+XTerm*saveLines: 15000
+
+! Keybindings
+XTerm*vt100.translations: #override \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
