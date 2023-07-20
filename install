@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+stowFolders=("bin" "i3" "nvim" "picom" "tmux" "xterm" "zsh")
+
+for folder in ${stowFolders[@]}; do
+    stow -D $folder
+    stow $folder
+done
