@@ -15,6 +15,8 @@ addToPathFront() {
     fi
 }
 
+addToPath $HOME/.fnm
+
 addToPathFront $HOME/.local/scripts
 addToPathFront $HOME/.local/bin
 addToPathFront $HOME/.deno/bin
